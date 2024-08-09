@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form action="login.html">
+
+            <h1>Sign Up</h1>
+            <br>
+    
+            <label for="name" class="nameLabel">First Name : </label>
+            <label for="lastName" class="nameLabel">Last Name : </label>
+            <br>
+            <input type="text" placeholder="Enter your name" pattern="[A-Za-z ]+" id="name" required>
+            <input type="text" placeholder="Enter your last name" pattern="[A-Za-z ]+" id="lastName" required>
+            <br>
+            <label for="email">Email : </label>
+            <br>
+            <input type="text" placeholder="Enter your Email" id="email"
+            required>
+            <br>
+            <label for="pwd">Password : </label>
+            <br>
+            <input type="password" placeholder="Enter your password" id="pwd" minlength="4" maxlength="8" required>
+            <br>
+            <label for="confirmPWD">Confirm Password : </label>
+            <br>
+            <input type="password" placeholder="Enter confirm password" id="confirmPWD" required>
+            <br>
+            <label for="DOB">Date of Birth : </label>
+            <br>
+            <input type="date" id="DOB" required>
+            <br>
+            <button id="submit" value="Submit" onclick="insertData(event)">Submit</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+    </div>
+</html>

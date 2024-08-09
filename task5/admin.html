@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body onload="showAllData()">
+    <button onclick="logOut()">Log Out</button>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>DOB</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit User</h2>
+            <form id="editForm">
+                <label for="editFirstName">First Name:</label>
+                <input type="text" id="editFirstName" pattern="[A-Za-z ]+" name="editFirstName"><br><br>
+                <label for="editLastName">Last Name:</label>
+                <input type="text" id="editLastName" pattern="[A-Za-z ]+" name="editLastName"><br><br>
+                <label for="editEmail">Email:</label>
+                <input type="text" id="editEmail" name="editEmail"><br><br>
+                <label for="editDOB">DOB:</label>
+                <input type="date" id="editDOB" name="editDOB"><br><br>
+                <button type="button" onclick="saveEdit()">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #76ABAE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.userInfo {
+    justify-content: center;
+    margin: 150px 600px;
+    width: 600px;
+}
+
+button {
+    background-color: #222831;
+    color: white;
+    height: 35px;
+    width: 80px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #31363F;
+    cursor: grab;
+}
